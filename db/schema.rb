@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150505222610) do
+ActiveRecord::Schema.define(version: 20150505223602) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,8 +48,11 @@ ActiveRecord::Schema.define(version: 20150505222610) do
     t.string   "last_name",  null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "party_id"
   end
 
   add_index "politicians", ["fec_number"], name: "index_politicians_on_fec_number", unique: true, using: :btree
+  add_index "politicians", ["party_id"], name: "index_politicians_on_party_id", using: :btree
 
+  add_foreign_key "politicians", "parties"
 end
