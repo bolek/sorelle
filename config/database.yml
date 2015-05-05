@@ -3,6 +3,8 @@ development: &default
   database: sorelle_development
   encoding: utf8
   host: localhost
+  username: sorelle
+  password: p@ssword!
   min_messages: warning
   pool: 2
   timeout: 5000
