@@ -207,6 +207,7 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (~> 1.1)
+    sequel (4.22.0)
     shoulda-matchers (2.8.0)
       activesupport (>= 3.0.0)
     simple_form (3.1.0)
@@ -293,6 +294,7 @@ DEPENDENCIES
   refills
   rspec-rails (~> 3.1.0)
   sass-rails (~> 5.0)
+  sequel
   shoulda-matchers
   simple_form
   simplecov
